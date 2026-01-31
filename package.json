@@ -1,11 +1,14 @@
 {
 	"name": "@thasmo/ui",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"packageManager": "pnpm@10.28.1",
 	"description": "UI for personal web projects.",
 	"license": "MIT",
-	"repository": "thasmo/ui",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thasmo/ui.git"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/ui.d.ts",
@@ -19,6 +22,9 @@
 	},
 	"main": "./dist/ui.js",
 	"types": "./dist/ui.d.ts",
+	"files": [
+		"./dist/"
+	],
 	"engines": {
 		"node": ">=24",
 		"pnpm": ">=10"
