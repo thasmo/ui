@@ -17,8 +17,7 @@
 		"./preset": {
 			"types": "./dist/preset.d.ts",
 			"import": "./dist/preset.js"
-		},
-		"./styles": "./dist/ui.css"
+		}
 	},
 	"main": "./dist/ui.js",
 	"types": "./dist/ui.d.ts",

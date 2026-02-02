@@ -1,5 +1,3 @@
-import 'virtual:uno.css';
-
 export { default as Button } from './components/button/button.vue';
 export { default as Definition } from './components/definition/definition.vue';
 export { default as Heading } from './components/heading/heading.vue';
