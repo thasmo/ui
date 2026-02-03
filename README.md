@@ -1,6 +1,6 @@
 # UI
 
-> Personal UI.
+> UI for personal projects.
 
 ---
 
