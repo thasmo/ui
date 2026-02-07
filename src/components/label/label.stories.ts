@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
-import Tag from '@/components/tag/tag.vue';
 import icons from '../../../.storybook/icons.ts';
+import Tag from '../../components/tag/tag.vue';
 import Label from './label.vue';
 
 const meta = {
