@@ -7,7 +7,7 @@ export default {
 			path: './dictionary.txt',
 		},
 	],
-	ignorePaths: ['dist/', '*.stories.ts'],
+	ignorePaths: ['dist/', 'storybook-static/', '*.stories.ts'],
 	import: ['@somehow-digital/cspell-dictionary'],
 	language: 'en',
 	version: '0.2',

@@ -3,7 +3,7 @@ import type { InlineConfig } from 'vite';
 import { transformerDirectives } from 'unocss';
 import { mergeConfig } from 'vite';
 import tools from 'vite-plugin-vue-devtools';
-import icons from './icons';
+import icons from './icons.ts';
 
 const config: StorybookConfig = {
 	framework: '@storybook/vue3-vite',
@@ -11,6 +11,7 @@ const config: StorybookConfig = {
 	addons: [
 		'@storybook/addon-docs',
 		'@storybook/addon-themes',
+		'@storybook/addon-vitest',
 	],
 	async viteFinal(config: InlineConfig) {
 		return mergeConfig(config, {

@@ -1,4 +1,4 @@
-import type { Preview, Renderer } from '@storybook/vue3-vite';
+import type { Preview } from '@storybook/vue3-vite';
 import { withThemeByClassName } from '@storybook/addon-themes';
 import 'virtual:uno.css';
 
@@ -14,7 +14,7 @@ const preview: Preview = {
 		layout: 'centered',
 	},
 	decorators: [
-		withThemeByClassName<Renderer>({
+		withThemeByClassName({
 			themes: {
 				light: '',
 				dark: 'dark',

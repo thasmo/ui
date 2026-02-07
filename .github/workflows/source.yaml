@@ -34,10 +34,6 @@ jobs:
   build:
     name: build source
     runs-on: ubuntu-latest
-    env:
-      APPLICATION_SITE: ${{ vars.APPLICATION_SITE }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-      CLOUDFLARE_API_TOKEN: ${{ vars.CLOUDFLARE_API_TOKEN }}
     steps:
       - name: checkout repository
         uses: actions/checkout@v6
@@ -57,3 +53,27 @@ jobs:
         run: pnpm install
       - name: build source
         run: pnpm build
+  test:
+    name: test source
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: setup package manager
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: install node
+        uses: actions/setup-node@v6
+        with:
+          cache: pnpm
+          check-latest: true
+          node-version-file: .nvmrc
+      - name: install dependencies
+        run: pnpm install
+      - name: install playwright
+        run: pnpm exec playwright install --with-deps
+      - name: test source
+        run: pnpm test

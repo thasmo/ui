@@ -1,0 +1,11 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.storybook.tsbuildinfo",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"noEmit": true
+	},
+	"include": [".storybook/**/*"]
+}
