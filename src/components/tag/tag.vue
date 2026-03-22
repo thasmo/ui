@@ -11,8 +11,8 @@ const props = withDefaults(defineProps<{
 });
 
 const classes = computed(() => ({
-	'px-0.5em py-0.125em': !props.large,
-	'text-1.25rem px-1.25em py-0.5em': props.large,
+	'text-1rem px-0.5em py-0.125em': !props.large,
+	'text-1.25rem px-1.25em py-0.5em print:(text-1rem px-0.5em py-0.125em)': props.large,
 }));
 </script>
 
