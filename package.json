@@ -88,11 +88,5 @@
 		"vitest": "^4.0.18",
 		"vitest-browser-vue": "^2.0.2",
 		"vue-tsc": "^3.2.2"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild",
-			"vue-demi"
-		]
 	}
 }
