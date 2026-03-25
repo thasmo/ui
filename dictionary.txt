@@ -2,3 +2,5 @@ thasmo
 deinhamer
 squircle
 fontshare
+esbuild
+demi
