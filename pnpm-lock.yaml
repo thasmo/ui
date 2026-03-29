@@ -32,7 +32,7 @@ importers:
         version: 2.1.0(semantic-release@25.0.3(typescript@5.9.3))
       '@somehow-digital/unocss-preset':
         specifier: ^2.0.0
-        version: 2.1.0(unocss@66.6.7(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3)))
+        version: 2.2.0(unocss@66.6.7(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3)))
       '@storybook/addon-docs':
         specifier: ^10.2.0
         version: 10.3.3(@types/react@19.2.14)(esbuild@0.27.4)(rollup@4.59.0)(storybook@10.3.3(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3))
@@ -1979,8 +1979,12 @@ packages:
     peerDependencies:
       semantic-release: ^24.0.0 || ^25.0.0
 
-  '@somehow-digital/unocss-preset@2.1.0':
-    resolution: {integrity: sha512-iiMoEnAUzYrRExqfS+YQQ31eYUpmJNTi4I/M6wx2mugP+/b1I+uMTuOlpp08MzlAWKUzAejkT+xHYIAOv4JJxA==}
+  '@somehow-digital/styles@1.0.1':
+    resolution: {integrity: sha512-bV2zZtkeJqatfEx3tbAi9jP5LSgzJN24yl8OWpayvfK3g1I8et6ozoU4jK+yxzR2JX8wt1x5x42XjKfGjGC0Jw==}
+    engines: {node: '>=22', pnpm: '>=10'}
+
+  '@somehow-digital/unocss-preset@2.2.0':
+    resolution: {integrity: sha512-oUirYDkk/RB0XsYEYY6kSJiXrTrgAPj5lDVMhtu31iQgqJvMPVTzT722/L2oVZCXRMO8oqQVc4c3CHonT/4hiQ==}
     engines: {node: '>=22', pnpm: '>=10'}
     peerDependencies:
       unocss: ^66.0.0
@@ -7490,8 +7494,11 @@ snapshots:
       conventional-changelog-conventionalcommits: 9.2.0
       semantic-release: 25.0.3(typescript@5.9.3)
 
-  '@somehow-digital/unocss-preset@2.1.0(unocss@66.6.7(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3)))':
+  '@somehow-digital/styles@1.0.1': {}
+
+  '@somehow-digital/unocss-preset@2.2.0(unocss@66.6.7(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3)))':
     dependencies:
+      '@somehow-digital/styles': 1.0.1
       unocss: 66.6.7(vite@8.0.3(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3))
 
   '@standard-schema/spec@1.1.0': {}
