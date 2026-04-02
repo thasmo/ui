@@ -13,6 +13,9 @@ const config: StorybookConfig = {
 		'@storybook/addon-themes',
 		'@storybook/addon-vitest',
 	],
+	core: {
+		disableTelemetry: true,
+	},
 	async viteFinal(config: InlineConfig) {
 		return mergeConfig(config, {
 			publicDir: 'public',
