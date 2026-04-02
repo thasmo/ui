@@ -3,6 +3,10 @@ import type { Preset } from 'unocss';
 import base from '@somehow-digital/unocss-preset';
 import { getFluidSize } from './utils/typography';
 
+const rules = {
+	fluid: /^fluid-([^-]+)-([^-]+)$/,
+};
+
 export default function preset(): Preset {
 	return {
 		name: 'thasmo-ui',
@@ -46,7 +50,7 @@ export default function preset(): Preset {
 			},
 		},
 		rules: [
-			[/^fluid-([^-]+)-([^-]+)$/, (match, { theme }: { theme: any }) => {
+			[rules.fluid, (match, { theme }: { theme: any }) => {
 				const [, type, size] = match as string[];
 				const sizes = theme.text?.sizes;
 				if (type && size && sizes && sizes[type] && sizes[type][size]) {
