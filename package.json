@@ -40,7 +40,7 @@
 		"prepare:husky": "husky",
 		"test": "vitest run",
 		"lint": "concurrently --group --prefix-colors 'auto' 'pnpm:lint:*'",
-		"lint:types": "vue-tsc --build",
+		"lint:vue": "vue-tsc --noEmit",
 		"lint:eslint": "eslint .",
 		"lint:cspell": "cspell --no-progress --no-summary --no-must-find-files .",
 		"lint:knip": "knip --no-progress",
