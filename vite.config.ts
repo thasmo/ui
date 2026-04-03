@@ -1,17 +1,18 @@
-import type { UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { resolve } from 'node:path';
+import process from 'node:process';
 import { fileURLToPath, URL } from 'node:url';
 import unocss from 'unocss/vite';
+import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
-export default {
+export default defineConfig({
 	publicDir: false,
 	plugins: [
 		vue(),
 		unocss(),
-		dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json' }),
-	],
+		!process.env.VITEST && !process.env.STORYBOOK && dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json' }),
+	].filter(Boolean),
 	resolve: {
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -33,4 +34,4 @@ export default {
 			],
 		},
 	},
-} as UserConfig;
+});
