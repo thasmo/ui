@@ -31,6 +31,7 @@ export default defineConfig({
 			external: [
 				'vue',
 				'unocss',
+				'@somehow-digital/unocss-preset',
 			],
 		},
 	},

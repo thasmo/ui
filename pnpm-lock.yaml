@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@somehow-digital/unocss-preset':
+        specifier: ^2.2.1
+        version: 2.2.1(unocss@66.6.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3)))
       vue:
         specifier: ^3.5.26
         version: 3.5.31(typescript@5.9.3)
@@ -30,9 +33,6 @@ importers:
       '@somehow-digital/semantic-release-config':
         specifier: ^2.0.0
         version: 2.1.0(semantic-release@25.0.3(typescript@5.9.3))
-      '@somehow-digital/unocss-preset':
-        specifier: ^2.0.0
-        version: 2.2.0(unocss@66.6.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3)))
       '@storybook/addon-docs':
         specifier: ^10.2.0
         version: 10.3.4(@types/react@19.2.14)(esbuild@0.27.7)(storybook@10.3.4(@testing-library/dom@10.4.1)(prettier@3.8.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3))
@@ -1859,12 +1859,12 @@ packages:
     peerDependencies:
       semantic-release: ^24.0.0 || ^25.0.0
 
-  '@somehow-digital/styles@1.0.1':
-    resolution: {integrity: sha512-bV2zZtkeJqatfEx3tbAi9jP5LSgzJN24yl8OWpayvfK3g1I8et6ozoU4jK+yxzR2JX8wt1x5x42XjKfGjGC0Jw==}
+  '@somehow-digital/styles@2.0.0':
+    resolution: {integrity: sha512-3ibyoCCv4vph8W2wvBlGLDVmAotk1AXj6cEHcfeGns1xhTGMNYNNQqzjkLDhEBxbd0v01tW3q/zuoJZlFU/U+g==}
     engines: {node: '>=22', pnpm: '>=10'}
 
-  '@somehow-digital/unocss-preset@2.2.0':
-    resolution: {integrity: sha512-oUirYDkk/RB0XsYEYY6kSJiXrTrgAPj5lDVMhtu31iQgqJvMPVTzT722/L2oVZCXRMO8oqQVc4c3CHonT/4hiQ==}
+  '@somehow-digital/unocss-preset@2.2.1':
+    resolution: {integrity: sha512-NRgEd+se4XXIo3NI6PackNQvwU4UkzAzDpr4y4xHoCAn2wdEwsXzNdHp36v4+0Wjx6E5JucPk+AIXaFfm3k+Yw==}
     engines: {node: '>=22', pnpm: '>=10'}
     peerDependencies:
       unocss: ^66.0.0
@@ -7321,11 +7321,11 @@ snapshots:
       conventional-changelog-conventionalcommits: 9.3.1
       semantic-release: 25.0.3(typescript@5.9.3)
 
-  '@somehow-digital/styles@1.0.1': {}
+  '@somehow-digital/styles@2.0.0': {}
 
-  '@somehow-digital/unocss-preset@2.2.0(unocss@66.6.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3)))':
+  '@somehow-digital/unocss-preset@2.2.1(unocss@66.6.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3)))':
     dependencies:
-      '@somehow-digital/styles': 1.0.1
+      '@somehow-digital/styles': 2.0.0
       unocss: 66.6.7(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@24.12.2)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3))
 
   '@standard-schema/spec@1.1.0': {}
