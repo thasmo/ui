@@ -27,10 +27,12 @@ export default defineConfig({
 			},
 			formats: ['es'],
 		},
-		rollupOptions: {
+		rolldownOptions: {
 			external: [
 				'vue',
 				'unocss',
+				'@somehow-digital/unocss-preset',
+				'@somehow-digital/styles',
 			],
 		},
 	},
