@@ -1,4 +1,6 @@
+export { default as ActionButton } from './components/button/action-button.vue';
 export { default as Button } from './components/button/button.vue';
+export { default as Collapsible } from './components/collapsible/collapsible.vue';
 export { default as Definition } from './components/definition/definition.vue';
 export { default as Gravatar } from './components/gravatar/gravatar.vue';
 export { default as Heading } from './components/heading/heading.vue';
