@@ -12,5 +12,6 @@ export { default as Pill } from './components/pill/pill.vue';
 export { default as Section } from './components/section/section.vue';
 export { default as Tag } from './components/tag/tag.vue';
 export { default as Text } from './components/text/text.vue';
+export { default as Tooltip } from './components/tooltip/tooltip.vue';
 
 export { default as useGravatar } from './composables/gravatar.ts';
