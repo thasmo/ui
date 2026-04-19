@@ -16,6 +16,11 @@ withDefaults(defineProps<{
 	tag: 'section',
 });
 
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+	suffix: (props: Record<string, never>) => unknown;
+}>();
+
 const showAnchor = ref(false);
 </script>
 

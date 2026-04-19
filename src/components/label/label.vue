@@ -5,6 +5,10 @@ defineProps<{
 	text?: string;
 	icon?: string;
 }>();
+
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+}>();
 </script>
 
 <template>

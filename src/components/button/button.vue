@@ -8,6 +8,10 @@ defineProps<{
 	rel?: string;
 }>();
 
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+}>();
+
 const classes = [
 	'inline-flex',
 	'flex-row',
