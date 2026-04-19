@@ -14,6 +14,11 @@ const props = withDefaults(
 	},
 );
 
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+	suffix: (props: Record<string, never>) => unknown;
+}>();
+
 const tag = computed(() => props.tag || `h${props.level}`);
 const size = computed(() => props.size || props.level);
 

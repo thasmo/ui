@@ -8,6 +8,10 @@ withDefaults(defineProps<{
 }>(), {
 	external: false,
 });
+
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+}>();
 </script>
 
 <template>

@@ -6,6 +6,11 @@ defineProps<{
 	label: string;
 }>();
 
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+	content: (props: Record<string, never>) => unknown;
+}>();
+
 const open = shallowRef(false);
 </script>
 

@@ -12,6 +12,10 @@ const props = withDefaults(
 	},
 );
 
+defineSlots<{
+	default: (props: Record<string, never>) => unknown;
+}>();
+
 const classes = computed(() => ({
 	'fluid-text-regular': !props.small,
 	'fluid-text-small': props.small,
