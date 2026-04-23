@@ -2,7 +2,7 @@
 	"name": "@thasmo/ui",
 	"type": "module",
 	"version": "1.0.0",
-	"packageManager": "pnpm@10.33.0",
+	"packageManager": "pnpm@10.33.2",
 	"description": "UI for personal web projects.",
 	"license": "MIT",
 	"repository": {
