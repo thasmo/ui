@@ -3,15 +3,15 @@ import { resolve } from 'node:path';
 import process from 'node:process';
 import { fileURLToPath, URL } from 'node:url';
 import unocss from 'unocss/vite';
+import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
 
 export default defineConfig({
 	publicDir: false,
 	plugins: [
 		vue(),
 		unocss(),
-		!process.env.VITEST && !process.env.STORYBOOK && dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json' }),
+		!process.env.VITEST && !process.env.STORYBOOK && dts({ bundleTypes: true, tsconfigPath: './tsconfig.app.json' }),
 	].filter(Boolean),
 	resolve: {
 		alias: {
