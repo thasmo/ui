@@ -56,7 +56,7 @@
 		"@somehow-digital/unocss-preset": "^2.2.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^20.0.0",
+		"@commitlint/cli": "^21.0.0",
 		"@iconify-json/ri": "^1.2.8",
 		"@microsoft/api-extractor": "^7.58.7",
 		"@somehow-digital/commitlint-config": "^1.0.0",
