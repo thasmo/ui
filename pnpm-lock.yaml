@@ -62,7 +62,7 @@ importers:
         version: 6.0.7(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.35(typescript@6.0.3))
       '@vitest/browser-playwright':
         specifier: ^4.0.18
-        version: 4.1.8(playwright@1.60.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
+        version: 4.1.8(playwright@1.61.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
       '@vitest/coverage-v8':
         specifier: ^4.0.18
         version: 4.1.8(@vitest/browser@4.1.8)(vitest@4.1.8)
@@ -89,7 +89,7 @@ importers:
         version: 17.0.7
       playwright:
         specifier: ^1.58.2
-        version: 1.60.0
+        version: 1.61.0
       semantic-release:
         specifier: ^25.0.2
         version: 25.0.3(typescript@6.0.3)
@@ -4794,13 +4794,13 @@ packages:
   pkg-types@2.3.1:
     resolution: {integrity: sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg==}
 
-  playwright-core@1.60.0:
-    resolution: {integrity: sha512-9bW6zvX/m0lEbgTKJ6YppOKx8H3VOPBMOCFh2irXFOT4BbHgrx5hPjwJYLT40Lu+4qtD36qKc/Hn56StUW57IA==}
+  playwright-core@1.61.0:
+    resolution: {integrity: sha512-caX7TrY3Ml6egyDX0WUcTHDxodl/b51y5wJOdCEA36QviK/s2g081hvmGs8eaE3DWb6NYZQ6BjO/QkNRPenoPA==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.60.0:
-    resolution: {integrity: sha512-hheHdokM8cdqCb0lcE3s+zT4t4W+vvjpGxsZlDnikarzx8tSzMebh3UiFtgqwFwnTnjYQcsyMF8ei2mCO/tpeA==}
+  playwright@1.61.0:
+    resolution: {integrity: sha512-Z+7BeeqQPRRzklHsVFP4KTGIyMxKUmfeRA4WisM6G3/XW6nwGeX6fX9qYaDa+CiUqpOkb2f6X3nar05R3kSuJQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5058,8 +5058,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  semver@7.8.2:
-    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+  semver@7.8.4:
+    resolution: {integrity: sha512-rUCObTnP32Q08R2uuIrt7r9PlEonuTmtuXYcW6s5kjdlj3xbnwe+21yXptAUYcMAABLkYYTtnmzb3w3EDZfueA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -6195,7 +6195,7 @@ snapshots:
   '@commitlint/is-ignored@21.0.2':
     dependencies:
       '@commitlint/types': 21.0.1
-      semver: 7.8.2
+      semver: 7.8.4
 
   '@commitlint/lint@21.0.2':
     dependencies:
@@ -6267,7 +6267,7 @@ snapshots:
     dependencies:
       '@simple-libs/child-process-utils': 1.0.2
       '@simple-libs/stream-utils': 1.2.0
-      semver: 7.8.2
+      semver: 7.8.4
     optionalDependencies:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
@@ -7458,7 +7458,7 @@ snapshots:
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
       semantic-release: 25.0.3(typescript@6.0.3)
-      semver: 7.8.2
+      semver: 7.8.4
       tempy: 3.2.0
 
   '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.3(typescript@6.0.3))':
@@ -7585,7 +7585,7 @@ snapshots:
       storybook: 10.4.2(@testing-library/dom@10.4.1)(@types/react@19.2.16)(prettier@3.8.3)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     optionalDependencies:
       '@vitest/browser': 4.1.8(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
-      '@vitest/browser-playwright': 4.1.8(playwright@1.60.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
+      '@vitest/browser-playwright': 4.1.8(playwright@1.61.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
       '@vitest/runner': 4.1.8
       vitest: 4.1.8(@types/node@24.13.0)(@vitest/browser-playwright@4.1.8)(@vitest/coverage-v8@4.1.8)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
@@ -7778,7 +7778,7 @@ snapshots:
       eslint: 10.4.1(jiti@2.7.0)
       json-stable-stringify-without-jsonify: 1.0.1
       lodash.merge: 4.6.2
-      semver: 7.8.2
+      semver: 7.8.4
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -7814,7 +7814,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.60.1
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.8.2
+      semver: 7.8.4
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -7985,11 +7985,11 @@ snapshots:
       vite: 8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0)
       vue: 3.5.35(typescript@6.0.3)
 
-  '@vitest/browser-playwright@4.1.8(playwright@1.60.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)':
+  '@vitest/browser-playwright@4.1.8(playwright@1.61.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)':
     dependencies:
       '@vitest/browser': 4.1.8(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
       '@vitest/mocker': 4.1.8(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))
-      playwright: 1.60.0
+      playwright: 1.61.0
       tinyrainbow: 3.1.0
       vitest: 4.1.8(@types/node@24.13.0)(@vitest/browser-playwright@4.1.8)(@vitest/coverage-v8@4.1.8)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
@@ -8399,7 +8399,7 @@ snapshots:
       espree: 10.4.0
       fast-glob: 3.3.3
       is-glob: 4.0.3
-      semver: 7.8.2
+      semver: 7.8.4
     transitivePeerDependencies:
       - supports-color
 
@@ -8644,7 +8644,7 @@ snapshots:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.9
       meow: 13.2.0
-      semver: 7.8.2
+      semver: 7.8.4
 
   conventional-commits-filter@5.0.0: {}
 
@@ -8776,7 +8776,7 @@ snapshots:
       cspell-lib: 10.0.1
       fast-json-stable-stringify: 2.1.0
       flatted: 3.4.2
-      semver: 7.8.2
+      semver: 7.8.4
       tinyglobby: 0.2.17
 
   css-tree@3.2.1:
@@ -8864,7 +8864,7 @@ snapshots:
       '@one-ini/wasm': 0.1.1
       commander: 10.0.1
       minimatch: 9.0.9
-      semver: 7.8.2
+      semver: 7.8.4
 
   electron-to-chromium@1.5.368: {}
 
@@ -8956,12 +8956,12 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
       eslint: 10.4.1(jiti@2.7.0)
-      semver: 7.8.2
+      semver: 7.8.4
 
   eslint-compat-utils@0.6.5(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
       eslint: 10.4.1(jiti@2.7.0)
-      semver: 7.8.2
+      semver: 7.8.4
 
   eslint-config-flat-gitignore@2.3.0(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
@@ -9021,7 +9021,7 @@ snapshots:
       empathic: 2.0.1
       eslint: 10.4.1(jiti@2.7.0)
       module-replacements: 2.11.0
-      semver: 7.8.2
+      semver: 7.8.4
 
   eslint-plugin-es-x@7.8.0(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
@@ -9061,7 +9061,7 @@ snapshots:
       html-entities: 2.6.0
       object-deep-merge: 2.0.1
       parse-imports-exports: 0.2.4
-      semver: 7.8.2
+      semver: 7.8.4
       spdx-expression-parse: 4.0.0
       to-valid-identifier: 1.0.0
     transitivePeerDependencies:
@@ -9092,7 +9092,7 @@ snapshots:
       globals: 15.15.0
       globrex: 0.1.2
       ignore: 5.3.2
-      semver: 7.8.2
+      semver: 7.8.4
       ts-declaration-location: 1.0.7(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
@@ -9276,7 +9276,7 @@ snapshots:
       pluralize: 8.0.0
       regexp-tree: 0.1.27
       regjsparser: 0.13.1
-      semver: 7.8.2
+      semver: 7.8.4
       strip-indent: 4.1.1
 
   eslint-plugin-unused-imports@4.4.1(@typescript-eslint/eslint-plugin@8.60.1(@typescript-eslint/parser@8.60.1(eslint@10.4.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.4.1(jiti@2.7.0))(typescript@6.0.3))(eslint@10.4.1(jiti@2.7.0)):
@@ -9292,7 +9292,7 @@ snapshots:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 7.1.1
-      semver: 7.8.2
+      semver: 7.8.4
       vue-eslint-parser: 10.4.1(eslint@10.4.1(jiti@2.7.0))
       xml-name-validator: 4.0.0
     optionalDependencies:
@@ -9910,7 +9910,7 @@ snapshots:
     dependencies:
       acorn: 8.16.0
       eslint-visitor-keys: 5.0.1
-      semver: 7.8.2
+      semver: 7.8.4
 
   jsonfile@6.2.1:
     dependencies:
@@ -10106,7 +10106,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.8.2
+      semver: 7.8.4
 
   markdown-table@3.0.4: {}
 
@@ -10522,13 +10522,13 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.8.2
+      semver: 7.8.4
       validate-npm-package-license: 3.0.4
 
   normalize-package-data@8.0.0:
     dependencies:
       hosted-git-info: 9.0.3
-      semver: 7.8.2
+      semver: 7.8.4
       validate-npm-package-license: 3.0.4
 
   normalize-url@9.0.1: {}
@@ -10849,11 +10849,11 @@ snapshots:
       exsolve: 1.0.8
       pathe: 2.0.3
 
-  playwright-core@1.60.0: {}
+  playwright-core@1.61.0: {}
 
-  playwright@1.60.0:
+  playwright@1.61.0:
     dependencies:
-      playwright-core: 1.60.0
+      playwright-core: 1.61.0
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -11165,7 +11165,7 @@ snapshots:
       p-reduce: 3.0.0
       read-package-up: 12.0.0
       resolve-from: 5.0.0
-      semver: 7.8.2
+      semver: 7.8.4
       signale: 1.4.0
       yargs: 18.0.0
     transitivePeerDependencies:
@@ -11178,7 +11178,7 @@ snapshots:
 
   semver@7.7.4: {}
 
-  semver@7.8.2: {}
+  semver@7.8.4: {}
 
   shebang-command@2.0.0:
     dependencies:
@@ -11271,7 +11271,7 @@ snapshots:
       oxc-parser: 0.127.0
       oxc-resolver: 11.20.0
       recast: 0.23.11
-      semver: 7.8.2
+      semver: 7.8.4
       use-sync-external-store: 1.6.0(react@19.2.7)
       ws: 8.21.0
     optionalDependencies:
@@ -11720,7 +11720,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.13.0
-      '@vitest/browser-playwright': 4.1.8(playwright@1.60.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
+      '@vitest/browser-playwright': 4.1.8(playwright@1.61.0)(vite@8.0.16(@types/node@24.13.0)(esbuild@0.27.7)(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.8)
       '@vitest/coverage-v8': 4.1.8(@vitest/browser@4.1.8)(vitest@4.1.8)
     transitivePeerDependencies:
       - msw
@@ -11768,7 +11768,7 @@ snapshots:
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
       esquery: 1.7.0
-      semver: 7.8.2
+      semver: 7.8.4
     transitivePeerDependencies:
       - supports-color
 
