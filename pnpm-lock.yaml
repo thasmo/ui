@@ -104,7 +104,7 @@ importers:
         version: 66.10.5(cac@7.0.0)(rolldown@1.2.7)(srvx@1.0.3)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
       unplugin-dts:
         specifier: ^1.0.0
-        version: 1.1.0(@microsoft/api-extractor@7.59.1(@types/node@24.13.6))(@vue/language-core@3.3.11)(esbuild@0.28.2)(rolldown@1.2.7)(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
+        version: 1.1.1(@microsoft/api-extractor@7.59.1(@types/node@24.13.6))(@vue/language-core@3.3.11)(esbuild@0.28.2)(rolldown@1.2.7)(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
       vite:
         specifier: ^8.0.0
         version: 8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
@@ -5491,8 +5491,8 @@ packages:
       '@unocss/webpack':
         optional: true
 
-  unplugin-dts@1.1.0:
-    resolution: {integrity: sha512-KZJ+qk+lmd9dJY/PJvDRFL9BUtVubKDiX7Ai/X6mlkCArcQNzwmupKjVqHbRA42uqO5ZfFRFc+o8/OCbQ1GonQ==}
+  unplugin-dts@1.1.1:
+    resolution: {integrity: sha512-Z2VcabC0hjYuzF62oWmZXVoxagkM8bUWgqUy+dotoJTPnooR5mNaxbpv63JCmcaxdGCW2Bb75omK6FOryOYCRg==}
     peerDependencies:
       '@microsoft/api-extractor': '>=7'
       '@rspack/core': ^1
@@ -11562,7 +11562,7 @@ snapshots:
       - srvx
       - vite
 
-  unplugin-dts@1.1.0(@microsoft/api-extractor@7.59.1(@types/node@24.13.6))(@vue/language-core@3.3.11)(esbuild@0.28.2)(rolldown@1.2.7)(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)):
+  unplugin-dts@1.1.1(@microsoft/api-extractor@7.59.1(@types/node@24.13.6))(@vue/language-core@3.3.11)(esbuild@0.28.2)(rolldown@1.2.7)(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.0(@types/node@24.13.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)):
     dependencies:
       '@rollup/pluginutils': 5.4.0
       '@volar/typescript': 2.4.28(typescript@6.0.3)
