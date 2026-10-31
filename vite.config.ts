@@ -4,7 +4,7 @@ import process from 'node:process';
 import { fileURLToPath, URL } from 'node:url';
 import unocss from 'unocss/vite';
 import dts from 'unplugin-dts/vite';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
 	publicDir: false,
@@ -34,5 +34,11 @@ export default defineConfig({
 				'@somehow-digital/unocss-preset',
 			],
 		},
+	},
+	staged: {
+		'**/*.*': [
+			'eslint --fix',
+			'cspell --no-progress --no-summary --no-must-find-files',
+		],
 	},
 });
