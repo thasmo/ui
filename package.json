@@ -81,7 +81,7 @@
 		"playwright": "^1.58.2",
 		"semantic-release": "^25.0.2",
 		"storybook": "^10.2.0",
-		"typescript": "^6.0.0",
+		"typescript": "^7.0.0",
 		"unocss": "^66.0.0",
 		"unplugin-dts": "^1.0.0",
 		"vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
