@@ -84,7 +84,7 @@
 		"typescript": "^6.0.0",
 		"unocss": "^66.0.0",
 		"unplugin-dts": "^1.0.0",
-		"vite": "npm:@voidzero-dev/vite-plus-core@1.6.0",
+		"vite": "npm:@voidzero-dev/vite-plus-core@8.3.8000",
 		"vite-plugin-vue-devtools": "^8.0.5",
 		"vite-plus": "1.6.0",
 		"vitest": "5.1.0",
