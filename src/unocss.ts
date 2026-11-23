@@ -50,13 +50,16 @@ export default function preset(): Preset {
 			},
 		},
 		rules: [
-			[rules.fluid, (match, { theme }: { theme: any }) => {
-				const [, type, size] = match as string[];
-				const sizes = theme.text?.sizes;
-				if (type && size && sizes && sizes[type] && sizes[type][size]) {
-					return { 'font-size': sizes[type][size] };
-				}
-			}],
+			[
+				rules.fluid,
+				(match, { theme }: { theme: any }) => {
+					const [, type, size] = match as string[];
+					const sizes = theme.text?.sizes;
+					if (type && size && sizes && sizes[type] && sizes[type][size]) {
+						return { 'font-size': sizes[type][size] };
+					}
+				},
+			],
 		],
 	};
 }

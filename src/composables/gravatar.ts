@@ -7,7 +7,9 @@ export default function useGravatar(email: MaybeRefOrGetter<string>) {
 
 	onServerPrefetch(async () => {
 		const value = toValue(email);
-		hash.value = value ? await getHash(value) : '';
+		hash.value = value
+			? await getHash(value)
+			: '';
 	});
 
 	watchEffect((onCleanup) => {
@@ -15,7 +17,9 @@ export default function useGravatar(email: MaybeRefOrGetter<string>) {
 
 		(async () => {
 			const value = toValue(email);
-			const result = value ? await getHash(value) : '';
+			const result = value
+				? await getHash(value)
+				: '';
 
 			if (!cancelled)
 				hash.value = result;
